@@ -1,0 +1,53 @@
+.
+├── .gitignore
+├── ansible
+│   ├── ansible.cfg
+│   ├── playbook.yml
+│   └── roles
+│       ├── k3s
+│       │   └── tasks
+│       │       └── main.yml
+│       └── k3s-prereq
+│           └── tasks
+│               └── main.yml
+├── helm
+│   ├── backend
+│   │   ├── .helmignore
+│   │   ├── Chart.yaml
+│   │   ├── charts
+│   │   ├── templates
+│   │   │   ├── configmap-code.yaml
+│   │   │   ├── deployment.yaml
+│   │   │   └── service.yaml
+│   │   └── values.yaml
+│   ├── frontend
+│   │   ├── .helmignore
+│   │   ├── Chart.yaml
+│   │   ├── charts
+│   │   ├── templates
+│   │   │   ├── configmap-html.yaml
+│   │   │   ├── configmap-nginx.yaml
+│   │   │   ├── deployment.yaml
+│   │   │   ├── ingress.yaml
+│   │   │   └── service.yaml
+│   │   └── values.yaml
+│   └── postgres
+│       ├── .helmignore
+│       ├── Chart.yaml
+│       ├── charts
+│       ├── templates
+│       │   ├── configmap-init.yaml
+│       │   ├── service.yaml
+│       │   └── statefulset.yaml
+│       └── values.yaml
+└── terraform
+    ├── .terraform.lock.hcl
+    ├── cloud-init.yaml
+    ├── compute.tf
+    ├── data.tf
+    ├── outputs.tf
+    ├── providers.tf
+    ├── security.tf
+    └── variables.tf
+
+18 directories, 33 files
